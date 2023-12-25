@@ -25,9 +25,7 @@ const Login = () => {
         try {
             const response = await axios.post("http://localhost:3001/LoginUsers", formData);
             alert("logged in successfully")
-            // console.log((response).data.user);
             setCurrUser((response).data.user);
-            // console.log(currUser);
 
         } catch {
             console.log("error sending data")
